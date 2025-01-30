@@ -1,10 +1,10 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: GitRepository
-metadata:
-  name: flux-apps
-  namespace: flux-system
-spec:
-  interval: 1m
-  url: https://github.com/aqeelsadiq/flux_cd_eks.git
-  ref:
-    branch: main
+# apiVersion: source.toolkit.fluxcd.io/v1beta2
+# kind: GitRepository
+# metadata:
+#   name: flux-apps
+#   namespace: flux-system
+# spec:
+#   interval: 1m
+#   url: https://github.com/aqeelsadiq/flux_cd_eks.git
+#   ref:
+#     branch: main
