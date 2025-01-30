@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: namespace-creator-binding
+  # namespace: cert-manager # Must be the same namespace as the Role
+subjects:
+- kind: ServiceAccount
+  name: flux-system # The name of your Flux service account
+  namespace: flux-system # The namespace of your Flux service account
+roleRef:
+  kind: Role
+  name: namespace-creator # The name of the Role we created
+  apiGroup: rbac.authorization.k8s.io
