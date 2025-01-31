@@ -22,4 +22,5 @@ spec:
   tls:
   - hosts:
     - groveops.net
+    - "*.groveops.net"
     secretName: example-com-tls
