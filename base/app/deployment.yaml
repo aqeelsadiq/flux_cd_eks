@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: ubuntu/apache2
         ports:
         - containerPort: 80
 ---
