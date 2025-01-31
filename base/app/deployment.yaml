@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: aqeelsadiq/todoapp
+        image: nginx:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -28,8 +28,8 @@ metadata:
   namespace: cert-manager
 spec:
   ports:
-  - port: 3000
-    targetPort: 3000
+  - port: 80
+    targetPort: 80
   selector:
     app: simple-web-app
   # type: LoadBalancer
