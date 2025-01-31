@@ -6,7 +6,3 @@ resources:
   - namespace.yaml
   - release.yaml
   - repository.yaml
-  - gitrepository.yaml
-  - service-account.yaml
-  - cluster-role.yaml
-  - cluster-role-binding.yaml
