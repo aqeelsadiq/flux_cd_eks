@@ -12,7 +12,7 @@ spec:
   - host: groveops.net
     http:
       paths:
-      - path: /
+      - path: //usr/share/nginx/html/favicon.ico
         pathType: Prefix
         backend:
           service:
