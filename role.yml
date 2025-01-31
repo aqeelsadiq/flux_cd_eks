@@ -1,9 +1,0 @@
-apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
-metadata:
-  namespace: flux-system # Or a dedicated namespace for RBAC (e.g., rbac-system)
-  name: namespace-creator
-rules:
-- apiGroups: [""] # "" indicates core API group
-  resources: ["namespaces"]
-  verbs: ["create"]
